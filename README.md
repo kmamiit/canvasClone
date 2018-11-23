@@ -17,7 +17,7 @@ The following **required** user stories are complete:
 The following **stretch** user stories are implemented:
 
 - [ ] Tray bounces when returning to it's up or down positions (+1pt)
-- [ ] User sees as new face scale up and back down to simulate a "picking up and dropping" appearance (+1pt)
+- [X] User sees as new face scale up and back down to simulate a "picking up and dropping" appearance (+1pt)
 - [ ] User can use a pinch gesture to scale faces up or down (+1pt)
 - [ ] User can use a rotation gesture to rotate the position of faces on the canvas (+1pt)
 - [ ] User sees the tray arrow adjust to point up or down in relation to the position of the tray (+1pt)
@@ -43,7 +43,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/emN8scC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
