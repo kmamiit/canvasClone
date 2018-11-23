@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		44671FA521A7C8B600AE117C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44671FA421A7C8B600AE117C /* AppDelegate.swift */; };
-		44671FA721A7C8B600AE117C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44671FA621A7C8B600AE117C /* ViewController.swift */; };
 		44671FAA21A7C8B600AE117C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44671FA821A7C8B600AE117C /* Main.storyboard */; };
 		44671FAC21A7C8B900AE117C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44671FAB21A7C8B900AE117C /* Assets.xcassets */; };
 		44671FAF21A7C8B900AE117C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44671FAD21A7C8B900AE117C /* LaunchScreen.storyboard */; };
 		44671FBA21A7C8BA00AE117C /* canvasCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44671FB921A7C8BA00AE117C /* canvasCloneTests.swift */; };
 		44671FC521A7C8BA00AE117C /* canvasCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44671FC421A7C8BA00AE117C /* canvasCloneUITests.swift */; };
+		44671FD421A7CC0A00AE117C /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44671FD321A7CC0A00AE117C /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		44671FA121A7C8B600AE117C /* canvasClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canvasClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44671FA421A7C8B600AE117C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44671FA621A7C8B600AE117C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44671FA921A7C8B600AE117C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44671FAB21A7C8B900AE117C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44671FAE21A7C8B900AE117C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		44671FC021A7C8BA00AE117C /* canvasCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canvasCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44671FC421A7C8BA00AE117C /* canvasCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasCloneUITests.swift; sourceTree = "<group>"; };
 		44671FC621A7C8BA00AE117C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44671FD321A7CC0A00AE117C /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		44671FA321A7C8B600AE117C /* canvasClone */ = {
 			isa = PBXGroup;
 			children = (
+				44671FD221A7CBEC00AE117C /* View Controllers */,
 				44671FA421A7C8B600AE117C /* AppDelegate.swift */,
-				44671FA621A7C8B600AE117C /* ViewController.swift */,
 				44671FA821A7C8B600AE117C /* Main.storyboard */,
 				44671FAB21A7C8B900AE117C /* Assets.xcassets */,
 				44671FAD21A7C8B900AE117C /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				44671FC621A7C8BA00AE117C /* Info.plist */,
 			);
 			path = canvasCloneUITests;
+			sourceTree = "<group>";
+		};
+		44671FD221A7CBEC00AE117C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44671FD321A7CC0A00AE117C /* CanvasViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44671FA721A7C8B600AE117C /* ViewController.swift in Sources */,
+				44671FD421A7CC0A00AE117C /* CanvasViewController.swift in Sources */,
 				44671FA521A7C8B600AE117C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HA3498956;
 				INFOPLIST_FILE = canvasClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HA3498956;
 				INFOPLIST_FILE = canvasClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
